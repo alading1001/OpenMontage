@@ -16,6 +16,20 @@ import { ProductReveal, ProductRevealProps } from "./components/ProductReveal";
 import { CaptionOverlay, WordCaption } from "./components/CaptionOverlay";
 import { CollageBurst, CollageBurstProps } from "./CollageBurst";
 import { LyricOverlay, LyricOverlayProps } from "./LyricOverlay";
+import { MotionComic, MotionComicProps } from "./MotionComic";
+import { ChickenRabbit } from "./ChickenRabbit";
+import { XiaomiSu7BusinessStory } from "./XiaomiSu7BusinessStory";
+import { XiaomiSu7BusinessStoryV2 } from "./XiaomiSu7BusinessStoryV2";
+import { XiaomiSu7BusinessStoryV3 } from "./XiaomiSu7BusinessStoryV3";
+import { KidsEnglishWords, KIDS_ENGLISH_DURATION_FRAMES } from "./KidsEnglishWords";
+import { ParentMathQuantity } from "./ParentMathQuantity";
+import { PARENT_MATH_DURATION_FRAMES } from "./ParentMathTimeline";
+import { FruitComparisonStory } from "./FruitComparisonStory";
+import { FRUIT_DURATION_FRAMES } from "./FruitComparisonTimeline";
+import { CarrotMoreInteractive } from "./CarrotMoreInteractive";
+import { CARROT_MORE_DURATION_FRAMES } from "./CarrotMoreTimeline";
+import { AppleTrainMore } from "./AppleTrainMore";
+import { APPLE_MORE_DURATION_FRAMES } from "./AppleMoreTimeline";
 
 // ---------------------------------------------------------------------------
 // Theme System — prevents every video from looking like dark fintech
@@ -284,6 +298,18 @@ export const Root: React.FC = () => {
         } as CollageBurstProps}
       />
       <Composition
+        id="MotionComicVertical"
+        component={MotionComic}
+        durationInFrames={30 * 45}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          scenes: [],
+          backgroundColor: "#f7f1e8",
+        } as MotionComicProps}
+      />
+      <Composition
         id="LyricOverlay"
         component={LyricOverlay}
         durationInFrames={30 * 28}
@@ -295,6 +321,83 @@ export const Root: React.FC = () => {
           lyrics: [],
           bottomY: 0.88,
         } as LyricOverlayProps}
+      />
+      <Composition
+        id="ChickenRabbit"
+        component={ChickenRabbit}
+        durationInFrames={30 * 101}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+      <Composition
+        id="XiaomiSu7BusinessStory"
+        component={XiaomiSu7BusinessStory}
+        durationInFrames={30 * 96}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+      <Composition
+        id="XiaomiSu7BusinessStoryV2"
+        component={XiaomiSu7BusinessStoryV2}
+        durationInFrames={30 * 206}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+      <Composition
+        id="XiaomiSu7BusinessStoryV3"
+        component={XiaomiSu7BusinessStoryV3}
+        durationInFrames={30 * 177}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+      <Composition
+        id="KidsEnglishWords"
+        component={KidsEnglishWords}
+        durationInFrames={KIDS_ENGLISH_DURATION_FRAMES}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+      <Composition
+        id="FruitComparisonStory"
+        component={FruitComparisonStory}
+        durationInFrames={FRUIT_DURATION_FRAMES}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ParentMathQuantity"
+        component={ParentMathQuantity}
+        durationInFrames={PARENT_MATH_DURATION_FRAMES}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CarrotMoreInteractive"
+        component={CarrotMoreInteractive}
+        durationInFrames={CARROT_MORE_DURATION_FRAMES}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AppleTrainMore"
+        component={AppleTrainMore}
+        durationInFrames={APPLE_MORE_DURATION_FRAMES}
+        fps={30}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="EndTag"

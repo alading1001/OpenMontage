@@ -1,0 +1,61 @@
+{
+  "backgroundColor": "#f7f1e8",
+  "cuts": [
+    { "id": "scene-01-highway-gate", "source": "parenting-motion-comic-02/1.png", "in_seconds": 0, "out_seconds": 7.5 },
+    { "id": "scene-02-before-departure", "source": "parenting-motion-comic-02/2.png", "in_seconds": 7.5, "out_seconds": 15 },
+    { "id": "scene-03-car-sick", "source": "parenting-motion-comic-02/3.png", "in_seconds": 15, "out_seconds": 22.5 },
+    { "id": "scene-04-too-tired", "source": "parenting-motion-comic-02/4.png", "in_seconds": 22.5, "out_seconds": 30 },
+    { "id": "scene-05-grandpa-follows", "source": "parenting-motion-comic-02/5.png", "in_seconds": 30, "out_seconds": 37.5 },
+    { "id": "scene-06-arrival", "source": "parenting-motion-comic-02/6.png", "in_seconds": 37.5, "out_seconds": 45 }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-highway-gate",
+      "image": "parenting-motion-comic-02/1.png",
+      "start": 0,
+      "duration": 7.5,
+      "caption": "刚到高速口，彤彤忽然说不去长沙了。",
+      "motion": "push-in"
+    },
+    {
+      "id": "scene-02-before-departure",
+      "image": "parenting-motion-comic-02/2.png",
+      "start": 7.5,
+      "duration": 7.5,
+      "caption": "其实出发前，她已经认真闹过一场。",
+      "motion": "pan-right"
+    },
+    {
+      "id": "scene-03-car-sick",
+      "image": "parenting-motion-comic-02/3.png",
+      "start": 15,
+      "duration": 7.5,
+      "caption": "车才开没多久，困意和难受一起涌上来。",
+      "motion": "drift-up"
+    },
+    {
+      "id": "scene-04-too-tired",
+      "image": "parenting-motion-comic-02/4.png",
+      "start": 22.5,
+      "duration": 7.5,
+      "caption": "她不是反悔，只是真的太困了。",
+      "motion": "pull-back"
+    },
+    {
+      "id": "scene-05-grandpa-follows",
+      "image": "parenting-motion-comic-02/5.png",
+      "start": 30,
+      "duration": 7.5,
+      "caption": "外公顺着她哄，没一会儿，她就睡着了。",
+      "motion": "pan-left"
+    },
+    {
+      "id": "scene-06-arrival",
+      "image": "parenting-motion-comic-02/6.png",
+      "start": 37.5,
+      "duration": 7.5,
+      "caption": "到了长沙，她又满血复活，开始找玩具和猫。",
+      "motion": "drift-down"
+    }
+  ]
+}

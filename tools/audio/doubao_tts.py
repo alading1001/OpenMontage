@@ -316,18 +316,20 @@ class DoubaoTTS(BaseTool):
             "speech_rate": inputs.get("speech_rate", 0),
             "enable_timestamp": bool(inputs.get("enable_timestamp", True)),
         }
-        additions = {
-            "disable_markdown_filter": bool(inputs.get("disable_markdown_filter", False)),
+        req_params = {
+            "text": inputs["text"],
+            "speaker": voice_id,
+            "audio_params": audio_params,
         }
+        if inputs.get("disable_markdown_filter") is True:
+            req_params["additions"] = json.dumps(
+                {"disable_markdown_filter": True},
+                ensure_ascii=False,
+            )
         return {
             "user": {"uid": inputs.get("user_id", "openmontage")},
             "unique_id": request_id,
-            "req_params": {
-                "text": inputs["text"],
-                "speaker": voice_id,
-                "audio_params": audio_params,
-                "additions": json.dumps(additions, ensure_ascii=False),
-            },
+            "req_params": req_params,
         }
 
     def _poll_query(

@@ -1,0 +1,2 @@
+import React from 'react'; import {Composition,registerRoot} from 'remotion'; import {MouseApplesInteractive} from './MouseApplesInteractive'; import {MOUSE_APPLES_INTERACTIVE_DURATION_FRAMES} from './MouseApplesInteractiveTimeline';
+const Root=()=> <Composition id="MouseApplesInteractive" component={MouseApplesInteractive} durationInFrames={MOUSE_APPLES_INTERACTIVE_DURATION_FRAMES} fps={30} width={1080} height={1920}/>; registerRoot(Root);
